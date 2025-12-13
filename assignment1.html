@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resume & Bio-Data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #111827;
+            text-align: center;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 30px;
+            background: white;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 900px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #1e3a8a;
+            border-bottom: 2px solid #1e3a8a;
+            padding-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1e3a8a;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Resume & Bio-Data</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#biodata">Bio-Data</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a motivated student with a strong interest in technology and web development.
+            This website is created as part of a programming assignment using HTML, CSS, and JavaScript.
+        </p>
+    </section>
+
+    <section id="biodata">
+        <h2>Bio-Data</h2>
+        <table>
+            <tr>
+                <th>Full Name</th>
+                <td>Basil Shahul/td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>15/11/2004</td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <th>Nationality</th>
+                <td>Indian</td>
+            </tr>
+            <tr>
+                <th>Languages Known</th>
+                <td>English, Hindi</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+
+        <h3>Education</h3>
+        <ul>
+            <li>Doing Btech in CS&E at JSSATE, Bengaluru</li>
+        </ul>
+
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Java / Python (basic)</li>
+            <li>Database fundamentals</li>
+        </ul>
+
+        <h3>Projects</h3>
+        <ul>
+            <li>Resume Website using HTML & CSS</li>
+            <li>Mini Project on Web Surgery Recovery Management System</li>
+        </ul>
+
+        <h3>Strengths</h3>
+        <ul>
+            <li>Quick learner</li>
+            <li>Team player</li>
+            <li>Good communication skills</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Details</h2>
+        <p>Email: basilshahul234@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>2025 Resume Website | Hosted on Github</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href'))
+                    .scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
